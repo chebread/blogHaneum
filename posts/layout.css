@@ -23,6 +23,8 @@ a:hover {
 
 #blog-title {
     font-size: 37px;
+    font-weight: bold;
+    
     height: 20vh;
 
     margin-left: 15px;
