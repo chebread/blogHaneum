@@ -4,5 +4,3 @@ tests/
 # Except posts/blank files. It just html layout file
 posts/blank.html
 
-# Netlify setting file
-netlify.toml
