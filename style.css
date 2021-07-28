@@ -23,12 +23,13 @@ footer {
 hr {
     border: solid 1.8px black;
     width: 95%;
-
+    
     margin-bottom: 1vh;
+    
 }
 
 #header-hr {
-    margin-top: 1vh;
+    margin-top: 1.5vh;
 }
 
 #footer-hr {

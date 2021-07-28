@@ -37,6 +37,8 @@ footer {
     margin-left: 15px;
     margin-top: 1vh;
     margin-bottom: 7vh;
+
+    font-size: 16px;
 }
 
 hr {
@@ -47,11 +49,11 @@ hr {
 }
 
 #header-hr {
-    margin-top: 1vh;
+    margin-top: 1.5vh;
 }
 
 #footer-hr {
-    margin-top: 5vh;
+    margin-top: 6.5vh;
     margin-bottom: 1vh;
 }
 
