@@ -11,6 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="layout.css">
+
+    <style type="text/css">
+        .opption-list {
+            margin-bottom: 4vh;
+            list-style:none;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,7 +46,52 @@
             </section>
             
             <section class="letter-body">
-                <a href="https://jung-max.github.io/2019/09/27/Web-JavaScript-replace정규식/">JavaScript 정규표현식</a>
+                <p>
+                    jung-max님의 <a href="https://jung-max.github.io/2019/09/27/Web-JavaScript-replace정규식/">
+                    정규식 표현 블로그</a>를 기반으로 정리하였어요!
+                </p>
+
+                <p>
+                    <h2>정규식 기초</h2>
+                </p>
+
+                <p>
+                    <h3>Replace</h3>
+                    <code>JavaScript</code>에서 특정 문자열을 다른 문자열로 바꿀때는
+                    <code>variable.replace(targetText, willChangeText)</code>로 바꿔요 😉
+                </p>
+
+                <p>
+                    <h3>정규식으로 표현하지 않으면?</h3>
+                    만약 <code>I will be success, be good!</code>이라는 문자열에서 두번째
+                    <code>be</code> 문자열을 바꾸고 싶으면 정규식을 사용해야 되요!
+                </p>
+
+                <p>
+                    첫번째 문자열을 바꾸고 싶다면, 정규식을 사용하지 않고 <code>variable.replace</code>
+                    함수를 사용하면 되요
+                </p>
+
+                <p>
+                    <h2>정규식 옵션</h2>
+                    <ul>
+                        <li class="opption-list">g (global)는 모든 문자열을 검색할때 사용해요</li>
+
+                        <li class="opption-list">i (ignoreCase)는 대소문자를 구분하지 않고 싶을때 사용해요</li>
+                        
+                        <li class="opption-list">m (multiline)는 여러 줄을 검색할때 사용해요</li>
+
+                        <li class="opption-list">s는 줄 바꿈과 일치 하는 <code>.</code>을 허용할때 사용해요</li>
+
+                        <li class="opption-list">u는 패턴(타겟 문자열)을 일련의 유니 코드 코드 포인트로 취급할때 사용해요</li>
+                        
+                        <li class="opption-list">y는 대상 문자열에서이 정규식의 lastIndex 속성으로 표시된 인덱스에서만 일치하며 이후 인덱스에서는 일치하지 않을때 사용해요</li>
+                    </ul>
+                </p>
+                
+                <p>
+                    <h2>정규식 특수문자</h2>
+                </p>
             </section>
         </section>
 
