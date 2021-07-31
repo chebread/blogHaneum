@@ -3,6 +3,3 @@ tests/
 
 # Except posts/blank files. It just html layout file
 posts/blank.html
-
-# Excpet.toml file
-*.toml
