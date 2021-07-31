@@ -72,8 +72,8 @@ hr {
 .letter-container {
     margin-top: 3vh;
     margin-bottom: 4vh;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 21.5px; /*history: 25*/
+    margin-right: 21.5px;
 }
 
 .letter-title {
