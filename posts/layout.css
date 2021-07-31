@@ -12,10 +12,6 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-::selection {
-    background-color:lightskyblue;
-}
-
 a {
     color: black;
     text-decoration: none;
@@ -95,9 +91,18 @@ hr {
     font-size: 15px;
     color: gray;
 
-    margin-bottom: 2.5vh;
+    margin-bottom: 3vh; /*history: 2.5vh*/
 }
 
 code {
     color:dimgrey;
+}
+
+#quotation {
+    border-left: black solid 3px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 0;
 }
