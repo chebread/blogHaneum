@@ -1,14 +1,5 @@
 @charset "utf-8";
 
-body { 
-    display: flex;
-    justify-content: center;
-}
-
-.blog-container {
-    width: 850px;
-}
-
 .blog-header {
     margin-top: 3.5vh;
     margin-bottom: 3.5vh;
@@ -78,11 +69,4 @@ hr {
 .letter-body {
     font-size: 15px;
     color: gray;
-}
-
-code {
-    padding: 1px;
-    border-radius: 3.5px;
-    background-color:rgb(237, 237, 235);
-    color:dimgrey;
 }
