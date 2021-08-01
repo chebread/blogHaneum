@@ -70,7 +70,8 @@ hr {
     margin-top: 3vh;
     margin-bottom: 3vh;
     margin-left: 21.5px; /*history: 25*/ /*본문 margin-left*/
-    margin-right: 200px;
+    margin-right: 180px;
+    /*border: slateblue solid 3px;*/
 }
 
 .letter-title {
