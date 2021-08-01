@@ -72,8 +72,8 @@ hr {
 }
 
 code {
-    padding: 1.305px;
-    border-radius: 3px;
+    padding: 1px;
+    border-radius: 3.5px;
     background-color:rgb(237, 237, 235);
     color:dimgrey;
 }
