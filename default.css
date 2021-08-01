@@ -31,7 +31,8 @@ ul {
 }
 
 li {
+    /*border:goldenrod solid 3px;*/
     list-style: none;
     margin-top: 3vh;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
