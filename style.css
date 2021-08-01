@@ -5,6 +5,16 @@
     margin-bottom: 3.5vh;
     /*border: yellowgreen solid 3px;*/
 }
+/*
+.letter-container {
+    display: flex;
+    justify-content: center;
+}
+.letters {
+    /*border: sandybrown solid 3px;*//*
+
+    width: 900px;
+}*/
 
 #blog-title {
     /*margin-top: 4.6vh;*/
@@ -49,8 +59,9 @@ footer {
 
 hr {
     border: solid 1.5px black; /*1.8*/
-    width: 95%;
-    
+
+    margin-left: 17.5px;
+    margin-right: 17.5px;
     margin-top: 0;
     margin-bottom: 0;
     /*margin-bottom: 1vh;*/

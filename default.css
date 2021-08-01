@@ -10,13 +10,6 @@ body {
 
     font-size: 100%;
     font-family: 'Noto Sans KR', sans-serif;
-
-    display: flex;
-    justify-content: center;
-}
-
-.blog-container {
-    width: 900px;
 }
 
 a {
