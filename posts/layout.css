@@ -26,6 +26,10 @@ a:hover {
     text-decoration: none;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .blog-header {
     margin-top: 3vh;
     margin-bottom: 3vh;
@@ -166,5 +170,5 @@ br {
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: 600;
 }
