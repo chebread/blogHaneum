@@ -38,7 +38,7 @@ a:hover {
     display: flex;
     align-items: center;
 
-    font-size: 37px;
+    font-size: 36px;
     font-weight: bold;
 }
 
@@ -50,7 +50,7 @@ a:hover {
     align-items: center;
     
     font-weight: bold;
-    font-size: 25px;
+    font-size: 24.5px;
     color: lightslategray;
 }
 
@@ -72,8 +72,8 @@ hr {
 }
 
 .letter-container {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
     margin-left: 21.5px; /*history: 25*/ /*본문 margin-left*/
     margin-right: 21.5px;
     /*border: slateblue solid 3px;*/
@@ -102,7 +102,7 @@ hr {
 }
 
 code {
-    padding: 1px;
+    padding: 0.3px;
     border-radius: 3.5px;
     background-color:rgb(237, 237, 235);
     color:dimgrey;
@@ -163,4 +163,8 @@ h3 {
 
 br {
     line-height:10.5px;
+}
+
+.bold {
+    font-weight: bold;
 }
