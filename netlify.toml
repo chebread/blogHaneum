@@ -3,4 +3,4 @@ from = "*/"
 to = "index.html"
 status = 200
 
-/posts 404
+/posts/blog-introduce.html 404
