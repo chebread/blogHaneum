@@ -1,5 +1,4 @@
 [[redirects]]
 from = "*/"
 to = "index.html"
-
-/posts/blog-introduce.html 404
+status = 200
