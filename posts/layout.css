@@ -43,14 +43,14 @@ a:hover {
 }
 
 #blog-navigator {
-    margin-left: 18px;
-    margin-right: 18px;
+    margin-left: 16px;
+    margin-right: 16px;
 
     display: flex;
     align-items: center;
     
     font-weight: bold;
-    font-size: 24.5px;
+    font-size: 23.5px;
     color: lightslategray;
 }
 
