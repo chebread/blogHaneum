@@ -105,10 +105,10 @@ hr {
 }
 
 code {
-    padding: 0.3px;
-    border-radius: 3.5px;
+    padding: 1px;
+    border-radius: 4px;
     background-color:rgb(237, 237, 235);
-    color:dimgrey;
+    color:dimgray;
 }
 
 .quotation {
@@ -135,7 +135,7 @@ li {
 }
 
 h1 {
-    margin-top: 35px;
+    margin-top: 40px;
     margin-bottom: 10.5px;
 
     font-size: 25px;
@@ -143,7 +143,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 10.5px;
 
     font-size: 21.5px;
@@ -151,7 +151,7 @@ h2 {
 }
 
 h3 {
-    margin-top: 25px;
+    margin-top: 30px;
     margin-bottom: 10.5px;
 
     font-size: 19px;
@@ -169,13 +169,13 @@ br {
 pre {
     white-space: pre-line;
 
-    padding: 1px;
-    border-radius: 3.5px;
+    padding: 20px;
+    border-radius: 4px;
     background-color:rgb(237, 237, 235);
 
     color:dimgrey;
     font-family: courier, monospace;
 
-    margin-top:16.5px;
-    margin-bottom:16.5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
