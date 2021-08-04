@@ -165,3 +165,17 @@ br {
 .bold {
     font-weight: 600;
 }
+
+pre {
+    white-space: pre-line;
+
+    padding: 1px;
+    border-radius: 3.5px;
+    background-color:rgb(237, 237, 235);
+
+    color:dimgrey;
+    font-family: courier, monospace;
+
+    margin-top:16.5px;
+    margin-bottom:16.5px;
+}
