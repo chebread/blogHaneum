@@ -48,7 +48,8 @@
 
             display: flex;
             align-items: center;
-
+            justify-content: space-between;
+            
             font-size: 35px;
             font-weight: bold;
         }
@@ -129,6 +130,48 @@
         .bold {
             font-weight: 600;
         }
+
+        .menu {
+            position: absolute;
+
+            right: 0;
+            max-width: 0;
+            width: 180px;
+            height: 99px;
+
+            border-radius: 15px;
+            background-color: rgb(241, 239, 228);
+
+            margin-top: 90px;
+        }
+
+        .burger-icon {
+            cursor: pointer;
+            display: inline-block;
+
+            font-size: 26px;
+            transform: rotate(90deg);
+            margin-top: 12px;
+        }
+
+        .burger-check {
+            display: none;
+        }
+
+        .burger-check:checked~.menu {
+            max-width: 200px;
+            margin-right: 15px;
+            margin-left: 15px;
+        
+            padding-top: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 11px;
+        
+            font-size: 40px;
+            display: flex;
+            justify-content: flex-end;
+        }
     </style>
 </head>
 
@@ -138,6 +181,11 @@
         <header class="blog-header">
             <section id="blog-title">
                 Blog haneum
+                <input class="burger-check" type="checkbox" id="burger-check" />
+                <label class="burger-icon" for="burger-check"><span class="menu-box">|||</span></label>
+                <div class="menu">
+                    <a href="#">✉︎</a> <span style="font-size: 27px;">&nbsp;</span>
+                </div>
             </section>
 
             <nav id="blog-navigator">
