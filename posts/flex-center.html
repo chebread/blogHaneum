@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Blog-introduce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="layout.css">
+
+    <link rel="stylesheet" href="../menu.css">
+</head>
+
+<body>
+    
+    <div class="blog-container">
+        <header class="blog-header">
+            <section id="blog-title">
+                Blog haneum
+                <input class="menu-check" type="checkbox" id="menu-check" />
+                <label class="menu-icon" for="menu-check">|||</label>
+                <div class="menu">
+                    <a href="#">✉︎</a>
+                </div>
+            </section>
+
+            <nav id="blog-navigator">
+                css-flex
+            </nav>
+        </header>
+
+        <hr id="header-hr">
+
+        <section class="letter-container">
+            <header class="letter-title">
+                Flex로 중앙 정렬을 하는 방법을 알아봐요 🤩
+            </header>
+
+            <section class="letter-date">
+                2021년 8월 5일 목요일 ⛅️
+            </section>
+            
+            <section class="letter-body">
+                <p><code>flex</code>로 중앙 정렬을 하는 방법은 정말 쉬운데요! 😎</p>
+
+                <p>한번 코드를 보면서 알아볼게요 😉</p>
+
+                <pre>
+                    .flex-container {
+                    &nbsp;&nbsp;&nbsp;&nbsp; display: flex;
+                    &nbsp;&nbsp;&nbsp;&nbsp; justify-content: center;
+                    &nbsp;&nbsp;&nbsp;&nbsp; align-item: center;
+                </pre>
+            </section>
+        </section>
+
+        <hr id="footer-hr">
+
+        <footer>
+            <a id="footer-a" href="https://github.com/developerHaneum">@haneum</a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
