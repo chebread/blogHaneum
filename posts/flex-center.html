@@ -37,7 +37,7 @@
 
         <section class="letter-container">
             <header class="letter-title">
-                Flex로 중앙 정렬을 하는 방법을 알아봐요 🤩
+                Flex로 중앙 정렬을 하는 방법
             </header>
 
             <section class="letter-date">
@@ -45,16 +45,22 @@
             </section>
             
             <section class="letter-body">
-                <p><code>flex</code>로 중앙 정렬을 하는 방법은 정말 쉬운데요! 😎</p>
-
-                <p>한번 코드를 보면서 알아볼게요 😉</p>
-
                 <pre>
                     .flex-container {
                     &nbsp;&nbsp;&nbsp;&nbsp; display: flex;
                     &nbsp;&nbsp;&nbsp;&nbsp; justify-content: center;
                     &nbsp;&nbsp;&nbsp;&nbsp; align-item: center;
                 </pre>
+
+                <p><code>justify-content: center</code>는 <span class="bold">메인축</span>의 중앙에 요소를 배치하는 속성이에요</p>
+
+                <p>또한, <code>align-item: center</code>는 <span class="bold">수직축</span>의 중앙에 요소를 배치하는 속성이에요! 😉</p>
+
+                <p>그리고, 요소는 <span class="bold">메인축, 수직축의 중앙</span>에 배치되어, 요소는 중앙에 정렬이되요! 🤩</p>
+                <br>
+                <p>이 코드에서 주의해야 할 점은, <span class="bold">요소의 넓이, 높이</span>는 정의가 되어야 한다는 것이에요</p>
+                
+                <p>만약, 넓이나 높이가 명시되있지 않다면, 요소는 자기자신 밖에 없으니 당연히 정렬될 수 없겠죠! 😄</p>
             </section>
         </section>
 
