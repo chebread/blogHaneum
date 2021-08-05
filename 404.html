@@ -129,44 +129,42 @@
 
         .menu {
             position: absolute;
-
             right: 0;
             max-width: 0;
-            width: 180px;
-            height: 99px;
+            width: 159px;
+            height: 109px;
+            display: none; /*이걸 속성을 적용해야, 오른쪽 스크롤이 안되게 할 수 있어요*/
 
             border-radius: 15px;
             background-color: rgb(241, 239, 228);
-
             margin-top: 90px;
         }
-
+        
         .burger-icon {
             cursor: pointer;
             display: inline-block;
-
+            
             font-size: 26px;
             transform: rotate(90deg);
             margin-top: 12px;
         }
-
+        
         .burger-check {
             display: none;
         }
-
+        
         .burger-check:checked~.menu {
             max-width: 200px;
             margin-right: 15px;
             margin-left: 15px;
-        
+            padding-bottom: 0;
             padding-top: 0;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 11px;
-        
+            padding-left: 20px;
+            padding-right: 20px;
             font-size: 40px;
             display: flex;
             justify-content: flex-end;
+            align-items: flex-start;
         }
     </style>
 </head>
@@ -180,7 +178,7 @@
                 <input class="burger-check" type="checkbox" id="burger-check" />
                 <label class="burger-icon" for="burger-check"><span class="menu-box">|||</span></label>
                 <div class="menu">
-                    <a href="#">✉︎</a> <span style="font-size: 27px;">&nbsp;</span>
+                    <a href="#">✉︎</a>
                 </div>
             </section>
 

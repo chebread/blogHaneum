@@ -11,7 +11,7 @@
     margin-top: 90px;
 }
   
-.burger-icon {
+.menu-icon {
     cursor: pointer;
     display: inline-block;
     
@@ -20,11 +20,11 @@
     margin-top: 12px;
 }
   
-.burger-check {
+.menu-check {
     display: none;
 }
   
-.burger-check:checked~.menu {
+.menu-check:checked~.menu {
     max-width: 200px;
     margin-right: 15px;
     margin-left: 15px;
