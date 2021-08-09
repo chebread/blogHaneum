@@ -186,3 +186,7 @@ pre {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.strikethrough {
+    text-decoration: line-through;
+}
