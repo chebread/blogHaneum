@@ -129,6 +129,7 @@ li {
     list-style: "・";
     margin: 0;
     margin-left: 11.5px;
+    margin-right: 11.5px;
     margin-top: 11px;
     margin-bottom: 11px;
 
@@ -189,4 +190,11 @@ pre {
 
 .strikethrough {
     text-decoration: line-through;
+}
+
+.number-list {
+    list-style: decimal;
+    margin: 0;
+    margin-top: 11px;
+    margin-bottom: 11px;
 }
