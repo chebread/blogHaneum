@@ -105,8 +105,8 @@ hr {
 }
 
 code {
-    padding: 1px;
-    border-radius: 4px;
+    padding: 1.5px;
+    border-radius: 4.5px;
     background-color:rgb(237, 237, 235);
     color:dimgray;
 }
@@ -160,7 +160,7 @@ h3 {
 }
 
 br {
-    line-height:11px;
+    line-height: 11px;
 }
 
 .bold {
@@ -171,7 +171,7 @@ pre {
     white-space: pre-line;
 
     padding: 20px;
-    border-radius: 4px;
+    border-radius: 5px;
     background-color:rgb(237, 237, 235);
 
     color:dimgrey;
