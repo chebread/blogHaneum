@@ -29,8 +29,8 @@ a:hover {
 }
 
 .blog-header {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
 }
 
 #blog-title {
@@ -58,9 +58,10 @@ a:hover {
 }
 
 footer {
-    margin-top: 1.5vh;
+    margin-top: 1vh;
     margin-bottom: 5vh;
     margin-left: 15px;
+    margin-right: 15px;
     
     font-size: 17px;
 }
