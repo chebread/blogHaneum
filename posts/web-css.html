@@ -29,7 +29,7 @@
             </section>
 
             <nav id="blog-navigator">
-                
+                web-basis-skills
             </nav>
         </header>
 
@@ -37,15 +37,65 @@
 
         <section class="letter-container">
             <header class="letter-title">
-                
+                CSS 기본기
             </header>
 
             <section class="letter-date">
-                
+                2021년 8월 16일 월요일 ☀️
             </section>
             
             <section class="letter-body">
+                <p><code>CSS</code> 의 기본 문법과 활용 예제를 통해 <code>CSS</code> 를 더 배워바요!</p>
 
+                <h2>HTML 에서의 style Tag</h2>
+                <p><code>HTML</code> 엔 <code>﹤style﹥</code> 태그가 있어요</p>
+                <p>이 Tag 는 <code>CSS</code> 를 사용할때 <code>CSS</code> 코드를 작성하기 위한 공간이에요</p>
+
+                <br>
+                <p>만약, <code>CSS</code> 코드가 너무 많아서 <code>HTML</code> 코드와 분리하고 싶다면, 이런식으로 코드를 작성하면 되요! </p>
+                
+                <h3 class="code-kind">HTML 파일</h3>
+                <pre>
+                    &lt;head&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="strikethrough">&lt;style&gt;</span> &lt;!-HTML 에서 Style Tag 를 삭제해요--&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="strikethrough">&lt;/style&gt;</span> 
+                    &lt;/head&gt;
+                </pre>
+
+                <h3 class="code-kind">CSS 파일</h3>
+                <pre>
+                    <span class="strikethrough">&lt;style&gt;</span> &lt;!-CSS 파일을 한개 만들어준후, CSS 파일에 style Tag 는 삭제한체로 복사해줘요--&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;...
+                    &nbsp;&nbsp;&nbsp;&nbsp;...
+                    &nbsp;&nbsp;&nbsp;&nbsp;...
+                    <span class="strikethrough">&lt;/style&gt;</span>
+                </pre>
+
+                <h1>CSS 기본 문법</h1>
+                <p><code>CSS</code> 는 정해진 문법을 통해 <code>HTML</code> Tag 들을 제어해요</p>
+
+                <p>이제 Tag 를 제어할 수 있는 <code>CSS</code> 문법을 예제로 배워볼게요!</p>
+
+                <h2>페이지의 배경 색상을 바꾸는 방법</h2>
+                <pre>
+                    body {
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: Colors;
+                    }
+                </pre>
+
+                <p><code>Colors</code> 에 정하고 싶은 색상을 정의하면 되요!</p>
+
+                <h2>제목의 폰트 크기를 바꾸는 방법</h2>
+                <pre>
+                    .title {
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-size: Xpx;
+                    }
+                </pre>
+
+                <p><code>X</code> 에 정하고 싶은 크기를 설정하면 되고, 단위는 <code>px, em, vw, ...</code> 사용할 수 있어요</p>
+
+                <p>이 단위들은 정리해놓은 글을 확인해주세요! <a href="css-unit.html">(CSS 단위 정리)</a></p>
             </section>
         </section>
 
