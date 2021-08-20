@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Netlify 사용 방법</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="layout.css">
+
+    <link rel="stylesheet" href="../menu.css">
+
+    <script src="function.js"></script>
+</head>
+
+<body>
+    <div class="blog-container">
+        <section id="progressbar"></section>
+
+        <header class="blog-header">
+            <section id="blog-title">
+                Blog haneum
+                <input class="menu-check" type="checkbox" id="menu-check" />
+                <label class="menu-icon" for="menu-check">|||</label>
+                <div class="menu">
+                    <a href="#">✉︎</a>
+                </div>
+            </section>
+
+            <nav id="blog-navigator">
+                how-to-use
+            </nav>
+        </header>
+
+        <hr id="header-hr">
+
+        <section class="letter-container">
+            <header class="letter-title">
+                Netlify 사용 방법
+            </header>
+
+            <section class="letter-date">
+                2021년 8월 21일 토요일 ✨
+            </section>
+            
+            <section class="letter-body">
+                <p>Netlify 사용 방법에 대해 알아볼게요!</p>
+
+                <p>기본으로 Netlify 회원가입이 진행되어 있어야 해요</p>
+
+                <h2>내가 만든 페이지를 Netlify에 배포 하는 방법</h2>
+
+                <li class="number-list"><code>netlify.toml</code> 파일을 작성해요</li>
+                <p><a href="how-to-write-netlify-toml-file.html">🥽 Netlify.toml 파일 작성 방법</a></p>
+                
+                <br>
+                <li class="number-list">자신의 프로젝트를 <code>Github</code> 에 푸쉬해요</li>
+                <p><a href="how-to-use-github">🔌 Github 사용 방법</a></p>
+
+                <br>
+                <li class="number-list"><code>Netlify</code> 에 접속하여, <span class="bold"><a href="https://app.netlify.com/start">New site from Git</a></span> 를 클릭해요</li>
+                <p>이 속성은 Netlify의 홈(처음) 페이지에서 하단으로 스크롤하면 있어요!</p>
+
+                <br>
+                <li class="number-list">그다음, GitHub를 선택하고 업로드할 저장소를 선택해줘요</li>
+                <p>아까 푸쉬한 리포지토리를 업로드 해줘요!</p>
+
+                <br>
+                <p>여기서 가장 중요한 과정은, <span class="bold">첫번째 과정</span>이라고 생각되요😎<p>
+                <p>Netlify.toml 파일을 작성하는 방법을 정리한 글을 꼼꼼이 읽어주세요! 😉</p>
+            </section>
+        </section>
+
+        <hr id="footer-hr">
+
+        <footer>
+            <a id="footer-a" href="https://github.com/developerHaneum">@haneum</a>
+        </footer>
+    </div>
+</body>
+
+</html>
