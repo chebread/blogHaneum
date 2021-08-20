@@ -203,3 +203,12 @@ pre {
 .kind {
     color:dimgray;
 }
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    height: 5px;
+    width: 0%;
+
+    background-color: cornflowerblue;
+}
