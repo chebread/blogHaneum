@@ -203,13 +203,3 @@ pre {
 .kind {
     color:dimgray;
 }
-
-/*삭제 검토*/
-#progressbar {
-    position: fixed;
-    top: 0;
-    height: 3px;
-    width: 0%;
-
-    background-color: cornflowerblue;
-}
