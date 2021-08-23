@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>JavaScript 함수 정리</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="layout.css">
+
+    <link rel="stylesheet" href="../menu.css">
+</head>
+
+<body>
+    <div class="blog-container">
+        <header class="blog-header">
+            <section id="blog-title">
+                Blog haneum
+                <input class="menu-check" type="checkbox" id="menu-check" />
+                <label class="menu-icon" for="menu-check">|||</label>
+                <div class="menu">
+                    <a href="#">✉︎</a>
+                </div>
+            </section>
+
+            <nav id="blog-navigator">
+                js-basis-skills
+            </nav>
+        </header>
+
+        <hr id="header-hr">
+
+        <section class="letter-container">
+            <header class="letter-title">
+                JavaScript 함수 정리
+            </header>
+
+            <section class="letter-date">
+                2021년 8월 22일 일요일 🌫
+            </section>
+            
+            <section class="letter-body">
+                <h2>padEnd</h2>
+
+                <h3>형식</h3>
+                <code>str.padEnd(만들고자하는 문자열 길이, 만들고자하는 문자열)</code>
+                
+                <h3>예제</h3>
+                <pre>
+                    var str = 'Hello';
+
+                    str.padEnd(5, '.'); // Hello.....
+                </pre>
+
+                <h2>split</h2>
+
+                <h3>형식</h3>
+                <code>str.split(끊어야할 부분을 나타내는 문자열, 끊어질 문자열의 최대 개수)</code>
+
+                <h3>예제</h3>
+                <pre>
+                    var str = 'hello world';
+                    str.split(' ') // ['hello', 'world']
+                </pre>
+
+                <h2>join</h2>
+
+                <h3>형식</h3>
+                <code>array.join(배열의 각 요소를 구분할 문자열)</code>
+
+                <h3>예제</h3>
+                <pre>
+                    var arr = ['a', 'b', 'c'];
+
+                    arr.join(''); // abc
+                </pre>
+            </section>
+        </section>
+
+        <hr id="footer-hr">
+
+        <footer>
+            <a id="footer-a" href="https://github.com/developerHaneum">@haneum</a>
+        </footer>
+    </div>
+</body>
+
+</html>
