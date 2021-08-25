@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="layout.css">
+
+    <link rel="stylesheet" href="../menu.css">
+</head>
+
+<body>
+    <div class="blog-container">
+        <header class="blog-header">
+            <section id="blog-title">
+                Blog haneum
+                <input class="menu-check" type="checkbox" id="menu-check" />
+                <label class="menu-icon" for="menu-check">|||</label>
+                <div class="menu">
+                    <a href="#">✉︎</a>
+                </div>
+            </section>
+
+            <nav id="blog-navigator">
+                react-basis-skills
+            </nav>
+        </header>
+
+        <hr id="header-hr">
+
+        <section class="letter-container">
+            <header class="letter-title">
+                JSX 기본기
+            </header>
+
+            <section class="letter-date">
+                2021년 8월 24일 화요일 🌧
+            </section>
+            
+            <section class="letter-body">
+                <h2>Tag</h2>
+                <p>JSX에서는 Tag를 열었으면 꼭 닫혀있어야 해요!</p>
+
+                <pre>
+                    import React, { Component } from 'react';
+
+                    class App extends Component {
+                    &nbsp;&nbsp;&nbsp;&nbsp;render() {
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return (
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text"&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+                    &nbsp;&nbsp;&nbsp;&nbsp;}
+                    }
+
+                    export default App;
+                </pre>
+
+                <h2>엘리먼트</h2>
+                두개 이상의 엘리먼트(Tag)는 무조건 한개의 엘리먼트로 감싸져있어야 해요!
+                <pre>
+                    import React, { Component } from 'react';
+
+                    class App extends Component {
+                    &nbsp;&nbsp;&nbsp;&nbsp;render() {
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return (
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt; {/*이렇게!*/}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hello!
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hello
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+                    &nbsp;&nbsp;&nbsp;&nbsp;}
+                    }
+
+                    export default App;
+                </pre>
+
+                <h2>JavaScript의 varible을 사용하는 방법</h2>
+                <p>콧수염 괄호안에 변수를 적어 사용하면 되요!</p>
+
+                <pre>
+                    hello { varible }
+                </pre>
+
+                <h2>삼향연산자</h2>
+                <p>삼향연산자는 <code>if</code> 문을 사용할때 사용해요</p>
+
+                <pre>
+                    {
+                    &nbsp;&nbsp;&nbsp;&nbsp;1+1 === 2
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;? (True section)
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: (False section)
+                    }
+                </pre>
+
+                <h2>AND 연산자</h2>
+                <p>true일때 발생할 이벤트는 있지만 false 일때는 아무것도 없는 연산자에요</p>
+
+                <pre>
+                    1 + 1 === 2 && (True)
+                </pre>
+
+                <h2>className</h2>
+                <p>JSX에서 <code>class</code>를 사용하고 싶으면, <code>class</code>의 구문을 <code>className</code>으로 변경하면 되요!</p>
+
+                <pre>
+                    const style = { {/*객체로 style를 작성해야 되요*/}
+                    &nbsp;&nbsp;&nbsp;&nbsp;backgroundColor: 'black',
+                    }
+
+                    return &ltstyle={style}&gtHello&lt/style&gt;;
+                </pre>
+
+                <h2>주석</h2>
+                <code>{/*Text*/}</code> 로 작성해요
+            </section>
+        </section>
+
+        <hr id="footer-hr">
+
+        <footer>
+            <a id="footer-a" href="https://github.com/developerHaneum">@haneum</a>
+        </footer>
+    </div>
+</body>
+
+</html>
