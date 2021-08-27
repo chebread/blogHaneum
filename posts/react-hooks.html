@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="layout.css">
+
+    <link rel="stylesheet" href="../menu.css">
+</head>
+
+<body>
+    <div class="blog-container">
+        <header class="blog-header">
+            <section id="blog-title">
+                Blog haneum
+                <input class="menu-check" type="checkbox" id="menu-check" />
+                <label class="menu-icon" for="menu-check">|||</label>
+                <div class="menu">
+                    <a href="#">✉︎</a>
+                </div>
+            </section>
+
+            <nav id="blog-navigator">
+                react-basis-skills
+            </nav>
+        </header>
+
+        <hr id="header-hr">
+
+        <section class="letter-container">
+            <header class="letter-title">
+                React Hooks 기본기
+            </header>
+
+            <section class="letter-date">
+                2021년 8월 27일 금요일 🌧
+            </section>
+            
+            <section class="letter-body">
+                <p>React의 함수형 컴포넌트에서는 <code>props</code> 는 비구조 할당의 인자로 받아오며, <code>state</code> 는 Hooks가 있기전까지는 없었어요!</p>
+                <p>그치만, 이제 Hooks 라는 개념이 생겨, <code>state</code> 를 <code>useState</code> 라는 Hooks 함수로 사용할 수 있게 되었죠!</p>
+                
+                <br>
+                <p>여기서 함수형 컴포넌트에서 props를 전달하는 방법을 잠깐만 소개 할께요!</p>
+                <p>부모 컴포넌트에서 자식 컴포넌트를 사용할때 <code>&lt;자식 컴포넌트 props=propsValue /></code> 로 props를 전달해주면 됩니다!</p>
+                <br>
+                <p>자, 그려면 이제 편하고 간단한 Hooks에 대해 배워볼게요! :D</p>
+
+                <h2>useState</h2>
+
+                <h3>형식</h3>
+                <p><code>[value, setValue] = useState(0)</code></p>
+
+                <h3>개념</h3>
+                <p><code>useState</code> 는 <code>state</code> 를 만들때 사용해요</p>
+                <p>또한, 배열로 선언하며 배열의 첫번째 값은 state의 변수 이름을 뜻하고, 두 번째 값은 첫번째 값을 설정할 함수를 뜻해요!</p>
+
+                <br>
+                <p>그리고, <code>useState</code> 함수의 전달인자의 값은 배열의 첫번째 값을 초기화할 값을 뜻해요!</p>
+                <p>이해를 확실하게 하기위해 예제로 설명해드릴께요!</p>
+
+                <pre>
+                    import React, { useState } from 'react';
+                    // useState를 사용하려면 useState를 import 해주어야해요!
+
+                    const Counter = () => {
+                    // 함수형 컴포넌트는 이런식으로 선언하고, 괄호안에 props를 불러와요!
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;const [value, setValue] = useState(0);
+                    &nbsp;&nbsp;&nbsp;&nbsp;// state의 변수 이름과 그 변수의 값을 설정할 함수와 변수의 기본 값을 설정해요!
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;return (
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;현재 value 변수의 값은 {value} 입니다.&lt;/p&gt;
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button onClick={() => setValue(value + 1)}>+1&lt;button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{/*onClick 함수에서 바로 함수를 정의 했어요!*/}
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button onClick={() => setValue(value - 1)}>-1&lt;/button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;);
+                    };
+                </pre>
+            
+                <h2>useEffect</h2>
+
+                <h3>형식</h3>
+                <pre>
+                    useEffect(() => {
+                    &nbsp;&nbsp;&nbsp;&nbsp;...
+                    }, (기능...));
+                </pre>
+
+                <h3>개념</h3>
+                <p>React 컴포넌트가 Rendering 될때 특정 작업을 수행할 수 있게 해주는 Hooks 함수에요!</p>
+                <p>만약 입력이 될때나, 처음 렌더링 됬을때 실행하고 싶은 작업이 있다면 이 함수를 사용하면 되요!</p>
+
+                <br>
+                <p>기능... 부분에 에 빈 배열 값이 들어가면 처음 렌더링 될때만 실행되게 설정할 수 있어요!</p>
+                <p>또한, 특정 변수의 값이 변경되고 나서 실행하고 싶은 작업이 있다면, 배열안에 변수를 작성해주면 되요!</p>
+
+                <br>
+                <p>특정 변수의 종류는 state나 props 모두 가능해요!</p>
+
+                <br>
+                <p>그치만, 만약 state의 값이 변경되기 직전에 실행할 작업이 있다면, 그건 뒷정리 함수를 이용해야 해요!</p>
+                <p>뒷정리 함수는 이런식으로 선언해요!</p>
+
+                <pre>
+                    useEffect(() => {
+                    &nbsp;&nbsp;&nbsp;&nbsp;...
+                    &nbsp;&nbsp;&nbsp;&nbsp;return () => {
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(실행될 작업을 작성하세요!)
+                    &nbsp;&nbsp;&nbsp;&nbsp;}
+                    }, (기능...));
+                </pre>
+
+                <p>만약, 오직 컴포넌트가 사라질때(언마운트될때)만 실행하고 싶다면, 기능... 부분에 비어 있는 배열을 작성해주면 되요!</p>
+            
+                <h2>useRef</h2>
+
+                <h3>형식</h3>
+                <code>const refName = useRef(null) // null이 초깃값으로 설정되는 이유는 명시적으로 빈 레퍼런스를 생성했음을 알려주기 위함이에요!</code>
+
+                <h3>개념</h3>
+                <p><a href="https://velog.io/@velopert/react-hooks">React Hooks 완벽 정복하기의 글</a>에서 Ref 부분을 를 참고하세요</p>
+            </section>
+        </section>
+
+        <hr id="footer-hr">
+
+        <footer>
+            <a id="footer-a" href="https://github.com/developerHaneum">@haneum</a>
+        </footer>
+    </div>
+</body>
+
+</html>
