@@ -45,27 +45,47 @@
             </section>
             
             <section class="letter-body">
-                <p>
-                    오늘 Github에 <code>push</code> 하려고 하니, <code>remote:
-                    (영어..)</code> 이런식으로 결과가 나오더라고요.. 🤔
-                </p>
+                <p>만약, Github 로 <code>push</code> 를 시도할때, <code>remote: ...</code>오류가 난다면 이 해결 방법을 참고하면 되요 😎</p>
+                <p>해결 방법은, <span class="bold">Mac</span> 기준이에요</p>
 
-                <p>그래서 열심히 검색한 결과, <span style="font-weight: bold">해결 방법</span>을 찾았어요! 🤩</p>
-
-                <p style="color: grey">(해결 방법은 <span style="font-weight: bold;">Mac</span> 기준이에요!)</p>
-
-                <p>
-                    <h3>1. Keychain에 <code>github</code>을 검색하고, 
+                <br>
+                <li class="number-list">
+                    Keychain에 <code>github</code>을 검색하고,
                     <code>Internet</code>으로 된 속성을 삭제해요</h3>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;삭제하는 방법은,
-                    요소에 <code>ctrl</code>을 누르면서 클릭하면 <code>'제거'</code>가 나와요!
-                </p>
-
+                </li>
                 <p>
-                    <h3>2. <code>git push</code>을 시도해보고, <code>push</code>가
-                    정상적으로 작동되면 성공이에요!</h3>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;삭제하는 방법은,
+                    요소에 <code>ctrl</code>을 누르면서 클릭하면 작은 팝업으로
+                    <span class="bold">제거</span>가 나와요!
                 </p>
+
+                <li class="number-list">
+                    Github의 설정 → 개발자 설정 → token 발급으로 들어가서
+                    토큰을 repo 를 전체 선택후 token을 복사해요
+                </li>
+                
+                <li class="number-list">
+                    <code>git push</code> 를 입력하고,
+                    그다음 나오는 <span class="bold">id 입력 상자</span>에
+                    terminal에서 사용자 이름을 입력해주고, 비밀번호에 token을
+                    입력해줘요
+                </li>
+
+                <li class="number-list">
+                    token은 재발급이 안되니 안전한 곳에 보관해줘요
+                </li>
+
+                <li class="number-list">
+                    이제 기존에 <code>push</code> 했던거처럼 동일하게 <code>push</code> 가 가능해요
+                </li>
+
+                <li class="number-list">
+                    여기서 알아두어야 할점은, github token을 발급하였으면
+                    token이 유효한 지정한 일 수가 있을 것인데,
+                    <br>
+                    만약 그 일 수가 지나면 token을 다시 발급을 해야해요
+                    (다시 발급할때는 ①, ② 번은 안해도되요!)
+                </li>
             </section>
         </section>
 
