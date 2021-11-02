@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Firebase 기본기</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="layout.css">
+
+    <link rel="stylesheet" href="../menu.css">
+</head>
+<body>
+    <div class="blog-container">
+        <header class="blog-header">
+            <section id="blog-title">
+                Blog haneum
+                <input class="menu-check" type="checkbox" id="menu-check" />
+                <label class="menu-icon" for="menu-check">|||</label>
+                <div class="menu">
+                    <a href="#">✉︎</a>
+                </div>
+            </section>
+
+            <nav id="blog-navigator">
+                firebase-basis-skills
+            </nav>
+        </header>
+
+        <hr id="header-hr">
+
+        <section class="letter-container">
+            <header class="letter-title">
+                Firebase 기본기
+            </header>
+
+            <section class="letter-date">
+                2021년 10월 30일 토요일 ⛅️
+            </section>
+            
+            <section class="letter-body">
+                <p>이 블로그는 React Hooks를 이해한다는 전제하예 작성되었어요</p>
+
+                <p>만약 React Hooks를 잘 모르겠다면, <a href="react-hooks.html">이 블로그를 읽어보세요!</a></p>
+                <h2>React 기본 설정</h2>
+                
+                <h3>1. <code>npx create-react-app (e.g: bloghaneum)</code></h3>
+                <p>먼저, Terminal에서 <code>npx create-react-app</code> 으로 React App 을 만들어요</p>
+
+                <p>여기서 주의 해야할 점은, 반드시 소문자로 React App 을 만들어야한다는 거에요!</p>
+
+                <h3>2. <code>npm install firebase</code></h3>
+                <p>
+                    그리고, 자신이 만든 React App 디렉토리에 접근하여 <code>npm install firebase</code> 을 입력하여
+                    <br>
+                    Firebase Module 들을 설치해요
+                </p>
+
+                <h3>3. CRA (create-react-app) 로 만들어진 파일중에서 불필요한 파일을 삭제해요</h3>
+                <p>React App 의 홈디렉터리 기준으로, 지워야할 파일들과 디렉토리를 적어봤어요!</p>
+                <pre>
+                    file:
+                    README.md src/App.css src/App.test.js src/index.css src/logo.svg src/setupTests.js src/reportWebVitals.js public/favicon.ico public/logo192.png public/logo512.png public/robots.txt public/manifest.json
+                    
+                    dir:
+                    .git
+                </pre>
+
+                <h2>Firebase 기본 설정</h2>
+                <li class="number-list"><a href="https://firebase.google.com">firebase.google.com</a> 로 접속하여, <a href="https://console.firebase.google.com/">시작하기</a>를 눌러줘요!</li>
+
+                <li class="number-list">그다음, 프로젝트 추가를 눌러줘요 ✨</li>
+
+                <li class="number-list">Page의 지시에 따라 프로젝트를 생성해줘요 🧑‍🎨</li>
+            </section>
+        </section>
+
+        <hr id="footer-hr">
+
+        <footer>
+            <a id="footer-a" href="https://github.com/developerHaneum">@haneum</a>
+        </footer>
+    </div>
+</body>
+</html>
