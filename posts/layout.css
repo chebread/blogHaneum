@@ -166,6 +166,10 @@ br {
     font-weight: 600;
 }
 
+b {
+    font-weight: 600;
+}
+
 pre {
     white-space: pre-line;
 
@@ -193,8 +197,26 @@ pre {
     text-decoration: line-through;
 }
 
+strike {
+    text-decoration: line-through;
+}
+
 .number-list {
     list-style: decimal;
+    margin: 0;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.non-check-list {
+    list-style-type: '◻︎ ';
+    margin: 0;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.check-list {
+    list-style-type: '☑︎ ';
     margin: 0;
     margin-top: 11px;
     margin-bottom: 11px;
