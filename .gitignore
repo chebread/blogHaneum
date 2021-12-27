@@ -1,5 +1,8 @@
 # Except tests directory
 tests/
 
+# .DS_Store is ignore
+.DS_Store
+
 # Except posts/blank files. It just html layout file
 posts/blank.html
